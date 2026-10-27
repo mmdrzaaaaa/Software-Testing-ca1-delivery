@@ -1,0 +1,21 @@
+scenario,requestedAngle,speed,targetAngle,firstStep
+centered,0,0,0,0
+below positive step limit,59.99,30,59.99,59.99
+at positive step limit,60,30,60,60
+above positive step limit,60.01,30,60.01,60
+below negative step magnitude,-59.99,30,-59.99,-59.99
+at negative step limit,-60,30,-60,-60
+above negative step magnitude,-60.01,30,-60.01,-60
+below physical limit,449.99,30,449.99,60
+at physical limit,450,30,450,60
+beyond physical limit,450.01,30,450,60
+at negative physical limit,-450,30,-450,-60
+beyond negative physical limit,-450.01,30,-450,-60
+below speed threshold,150,119.99,150,60
+at speed threshold,150,120,150,60
+above speed threshold,150,120.01,90,60
+below high speed angle limit,89.99,121,89.99,60
+at high speed angle limit,90,121,90,60
+above high speed angle limit,90.01,121,90,60
+at negative high speed angle limit,-90,121,-90,-60
+beyond negative high speed angle limit,-90.01,121,-90,-60
